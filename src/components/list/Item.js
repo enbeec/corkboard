@@ -9,4 +9,5 @@ export const Item = ({ data, ...props }) => (
 
 const ITEM = styled.div`
   background: #eebeff;
+  border: 1px inset black;
 `;

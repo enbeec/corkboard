@@ -27,7 +27,7 @@ export const Corkboard = props => {
   //    });
   //}, [setUserObj, getUserObj, setReposArray, getReposArray]);
 
-  const types = ["repo", "info"];
+  const TYPES = ["repo", "info"];
 
   // start out with some test things
   const [things, setThings] = useState([
@@ -35,6 +35,7 @@ export const Corkboard = props => {
       name: "hello",
       type: "info",
       location: "board",
+      index: 0,
       x: 10,
       y: 0,
     },
@@ -42,6 +43,7 @@ export const Corkboard = props => {
       name: "there",
       type: "info",
       location: "board",
+      index: 1,
       x: 10,
       y: 20,
     },
@@ -49,8 +51,27 @@ export const Corkboard = props => {
       name: "friend",
       type: "info",
       location: "list",
+      index: 2,
       x: 10,
       y: 40,
+    },
+    {
+      name: "this-is-a-repo",
+      type: "repo",
+      location: "list",
+      description: "I am a description!",
+      index: 3,
+      x: 10,
+      y: 40,
+    },
+    {
+      name: "this-is-another-repo",
+      type: "repo",
+      location: "board",
+      description: "I am also a description!",
+      index: 4,
+      x: 10,
+      y: 80,
     },
   ]);
 

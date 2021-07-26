@@ -16,4 +16,5 @@ const CARDWRAPPER = styled.div`
 const CARD = styled.div`
   position: absolute;
   background: #f6ffbe;
+  border: 1px inset black;
 `;
