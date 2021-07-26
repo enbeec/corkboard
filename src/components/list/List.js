@@ -4,9 +4,11 @@ import { Item } from "./Item";
 
 export const List = ({ dataArray, ...props }) => (
   <LIST>
-    {dataArray.map(thing => (
-      <Item data={thing} />
-    ))}
+    {dataArray
+      .sort((a, b) => a.index > b.index)
+      .map(thing => (
+        <Item data={thing} />
+      ))}
   </LIST>
 );
 
